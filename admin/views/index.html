@@ -1,0 +1,37 @@
+<% include header.html %>
+
+<div class="container-fluid" id="content-wrapper">
+<div class="row-fluid">
+
+<!--menu content-->
+    <ul class="nav  nav-pills" id='li-side-bar'>
+    <li class="active"><a href="#list-product">List Product</a></li>
+    <li><a href="#regist-product">Add/Edit Product</a></li>
+    </ul>
+
+<div id="main-content">
+<!--main content-->
+
+<div id="tab-list-product" class="mytab">
+<% include product_list.html %>
+</div>
+
+<div id="tab-regist-product" class="mytab">
+<% include product_regist.html %>
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+</div>
+
+<script src="js/view/index.js"></script>
+
+<% include footer.html %>

@@ -1,0 +1,75 @@
+<h3>Бараа оруулах</h3>
+
+<form action="#" method="POST" id="product-form">
+
+<input type="hidden" name="entity" id="entity" value="product" />
+<input type="hidden" name="_id" id="_id" value="" />
+
+
+<table class="table table-bordered table-striped">
+<tbody>
+<tr>
+	<th>Зураг</th> 
+	<td>
+		<% include upload_box.html %>
+	</td>
+	
+</tr>
+<tr>
+	<th>Үнэ</th> 
+	<td>
+		Avsan:<div class="input-append">
+		<input type="number" name="cost" id="pcost" value="" class="input-small" />
+		<span class="add-on">₮</span>
+		</div>
+		&nbsp;&nbsp;&nbsp;
+		Zarah:<div class="input-append">
+		<input type="number" name="price" id="pprice" value="" class="input-small" />
+		<span class="add-on">₮</span>
+		</div>
+	</td>
+</tr>
+<tr>
+	<th>Нэр</th>
+	<td>
+		<input type="text" name="name" id="pname" value="" class="input-block-level" /><br />
+	</td>
+</tr>
+<tr>
+	<th>Тайлбар</th> 
+	<td>
+		<textarea id="pdesc" name="desc" placeholder="Тайлбараа оруулна уу"  class="input-block-level"></textarea><br />
+	</td>
+</tr>
+<tr>
+	<th>Tag</th>
+	<td>
+		<input type="text" name="tag" id="ptag" value="" class="input-block-level" /><br />
+		<p class="text-info">space separated</p>
+	</td>
+</tr>
+<tr>
+	<th>Нэмэлт</th> 
+	<td>
+		<textarea id="pmemo" name="memo" placeholder="Нийтэд харагдахгүй нэмэлт тайлбар"  class="input-block-level"></textarea><br />
+	</td>
+</tr>
+
+<tr>
+	<th>Нэмэлт</th> 
+	<td>
+		<input type="text" name="links" id="plinks" value="" class="input-block-level" /><br />
+		<a href="#" class="btn" id="add-link">add</a>
+	</td>
+</tr>
+
+</tbody>
+</table>
+
+<a href="#" class="btn btn-primary" id="register">Оруулах</a>
+<a href="#" class="btn" id="reset">Clear Input</a>
+
+</form>
+
+
+<script src="js/view/product_regist.js"></script>

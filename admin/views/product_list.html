@@ -1,0 +1,40 @@
+<h3>Product List</h3>
+
+<p class="text-right"><a href="#" class="btn btn-primary" id="reload">Reload</a></p>
+
+<div class="btn-group">
+	<button class="btn dropdown-toggle" data-toggle="dropdown">
+		Bulk Action
+		<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu">
+		<li > <a href="#" id="bulk-delete">Delete</a> </li>
+		<li > <a href="#" id="bulk-publish">Publish</a> </li>
+		<li > <a href="#" id="bulk-unpublish">Cancel Publish</a> </li>
+	</ul>
+</div>
+<br />
+
+<table class="table table-bordered table-striped">
+<thead>
+<tr>
+	<th><input type="checkbox" name="all_id" value="all" /></th>
+	<th>image</th>
+	<th>name</th>
+	<th>cost</th>
+	<th>price</th>
+	<th>desc</th>
+	<th>tag</th>
+	<th>additional memo</th>
+	<th>links</th>
+</tr>
+</thead>
+
+<tbody id="tbody-product-list">
+
+</tbody>
+</table>
+
+
+<script src="js/view/product_list.js"></script>
+
